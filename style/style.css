@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	box-sizing: border-box;
+    background-color: #fff; 
+}
+.top-contact{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #9C1A18;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 10px;
+}
+.email,.mobile{
+    align-self: center;
+    display: flex;
+}
+.email img{
+    height: 20px;
+    text-align: left;
+}
+.mobile img{
+    height: 34px;
+    align-self: center;
+    padding-right: 6px;
+}
+.top-contact a{
+    color: white;
+    text-decoration: none;
+    padding: 0 4%;
+}
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #f5babad0;
+    z-index: 200;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    user-select: none;
+    overflow: hidden;
+    transition: all 1s;
+}
+.nav-active{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s;
+}
+.close{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.main-header{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 10vh;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+.logo-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ham-icon-container{
+    align-content: center;
+    padding: 28px 18px;
+}
+.ham-icon-container img{
+    border: 2px solid rgba(0,0,0,0.4);
+}
+.main-heading{
+    text-align: center;
+    padding: 104px 10px 0 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+.main-sec-image{
+    display: flex;
+    margin: 90px 0px;
+    justify-content: center;
+    align-items: center;
+}
+main.home-main{
+    background: linear-gradient(-90deg, #FDCA4E, #FDCA4E);
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-btn{
+    width: 16rem;
+    height: 5rem;
+    border-radius: 100px;
+    border: none;
+    background: #FD4E4E;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 0px rgba(0,0,0,0.2);
+    transition: all 0.1s ease-in-out;
+    outline: none;
+}
+.home-btn:active{
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+    transform: translateY(3px);
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.product-home-list{
+    height: auto;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+.nav-links li{
+    margin: 10px 0;
+}
+.nav-links li a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.firelockservices{
+    background: url('../images/WALL_3_FIRE_ALARM.png');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 26vh;
+    width: 100%;
+    margin-top: 30px;
+}
+.__bullets li:first-child{
+    list-style: none;
+    margin-bottom: 10px;
+}
+div.firelockservices .__content{
+    position: relative;
+    height: 26vh;
+    width: 100%;
+}
+.__content .__bullets{
+    list-style: url('../images/icons/chevron-right-solid.svg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 64%;
+    height: 15vh;
+    margin: 0px 135px;
+}
+.--below{
+    margin-left: 29%;
+    margin-top: 9px;
+}
+.__content h1{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.product-home-container{
+    height: auto;
+}
+.product-home-list-items{
+    display: flex;
+    margin-top: 40px;
+}
+div.product-list-image{
+    align-self: center;
+}
+.product-list-image img{
+    height: 118px;
+    margin: 0 13px;
+}
+.product-list-text{
+    padding: 10px;
+}
+div.product-list-text{
+    padding: 10px;
+}
+div.product-list-text h3{
+    padding-bottom:10px
+}
+div.product-list-text p{
+    line-height: 15px;
+}
+footer{
+    height: 80vh;
+    background: gray;
+}
