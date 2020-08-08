@@ -3,21 +3,19 @@ main.product-main{
   margin-top: 34px;
 }
 .items {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 0;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-}
-
-.items {}
-
-.items .item {
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  height: 37vh;
+  /* z-index: 999; */
+} 
+.item {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 10%);
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -29,11 +27,11 @@ main.product-main{
 }
 .text{
   opacity:0;
-  position:absolute;
-  top: 71%;
-  left:50%;
+  position: absolute;
+  /* top: 100%; */
+  /* left:50%; */
   transition: all 300ms ease-in-out;
-  transform: translate(-50%,-71%);
+  /* transform: translate(-50%,-71%); */
   font-weight: 500;
   width: fit-content;
 }
@@ -46,7 +44,7 @@ main.product-main{
 
 .item.active {
   opacity: 1;
-  z-index: 99;
+  z-index: 3;
   box-shadow: 0px 0px 65px -35px rgba(0, 0, 0, 0.75);
 }
 
@@ -68,7 +66,7 @@ main.product-main{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 275px;
-  z-index: 100;
+  z-index: 97;
 }
 
 .button-container .button {
