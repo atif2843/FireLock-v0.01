@@ -8,4 +8,4 @@
 # [✔] product nav links 
 # [✔] product pages 
 # [✔] product page slide
-# [✔] pro
+# [✔] sildes content added to 4 slides for initial (fire extinguisher)
