@@ -108,3 +108,9 @@ main.product-main{
 h1,h3{
   font-weight: 500;
 }
+.center{
+  text-align: center;
+}
+.fullwidth{
+  width: 100%;
+}
