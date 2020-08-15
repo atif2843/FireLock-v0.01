@@ -1,0 +1,9 @@
+.left{
+    text-align: left;
+}
+p.left{
+    margin-top: 5px;
+}
+.bottommargin{
+    margin-bottom: 10px;
+}

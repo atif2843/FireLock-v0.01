@@ -1,0 +1,18 @@
+.topbottommargin{
+    margin: 20px;
+}
+.textcenter{
+    text-align: center;
+  }
+.center{
+    width: 90%;
+    margin: 0 auto;
+  }
+.topbottommargin ul{
+    list-style-type: none;
+}
+.topbottommargin ul li p{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
