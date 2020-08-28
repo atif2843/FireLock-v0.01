@@ -10,6 +10,7 @@ main.product-main{
   /* transform: translate(-50%, -50%); */
   height: 37vh;
   /* z-index: 999; */
+  overflow: hidden;
 } 
 .item {
   position: absolute;
@@ -51,18 +52,18 @@ main.product-main{
 .item.prev {
   z-index: 2;
   opacity: 0.25;
-   /*transform: translate(-125%, -50%);*/
+  transform: translate(-125%, 10%) rotate(90deg);
 }
 
 .item.next {
   z-index: 2;
   opacity: 0.25;
-  /*transform: translate(25%, -50%);*/
+  transform: translate(35%, 10%) rotate(-90deg);
 }
 
 .items .button-container {
   position: absolute;
-  top: 50%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 227px;
@@ -88,8 +89,8 @@ main.product-main{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
   z-index: -99;
