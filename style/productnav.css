@@ -11,7 +11,11 @@ main.product-main{
   /* z-index: 999; */
   height: 250vh;
   overflow: hidden;
-} 
+}
+
+.revisedheight{
+  height: 48vh !important;
+}
 .item {
   position: absolute;
   top: 0;
@@ -120,5 +124,11 @@ h1,h3{
   position: relative !important;
 }
 .shrinkspace{
-  height: 30vh !important;
+  height: 50vh !important;
+}
+.revisedpos{
+  top: 31% !important;
+}
+.revisedtextpos{
+  top: 65% !important;
 }
