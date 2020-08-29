@@ -4,11 +4,7 @@ main.product-main{
 }
 .items {
   position: relative;
-  top: 0;
   width: 100%;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 999; */
   height: 250vh;
   overflow: hidden;
 }
@@ -124,7 +120,7 @@ h1,h3{
   position: relative !important;
 }
 .shrinkspace{
-  height: 50vh !important;
+  height: 30vh !important;
 }
 .revisedpos{
   top: 31% !important;

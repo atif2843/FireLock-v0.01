@@ -30,7 +30,6 @@ const slider = document.querySelector(".items");
 			}
       for (let i=0; i<text.length; i++){
         text[i].classList.remove("active");
-
       }
 
 			if (next == 9) {
@@ -44,8 +43,30 @@ const slider = document.querySelector(".items");
 			slides[current].classList.add("active");
 			slides[prev].classList.add("prev");
 			slides[next].classList.add("next");
-            text[current].classList.add("active");
+			text[current].classList.add("active");
         }
         console.log(text);
 		console.log(slides);
-		console.log(slider);
+
+
+
+
+		//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
