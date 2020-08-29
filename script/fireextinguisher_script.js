@@ -44,4 +44,5 @@ const slider = document.querySelector(".items");
             text[current].classList.add("active");
         }
         console.log(text);
-        console.log(slides);
+		console.log(slides);
+		console.log(slider);

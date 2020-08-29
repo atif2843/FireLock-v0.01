@@ -13,3 +13,7 @@ section{
     width: 90%;
     margin: 0 auto;
 }
+.imagecenter{
+    display: block;
+    margin: 0 auto;
+}

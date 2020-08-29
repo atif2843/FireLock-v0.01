@@ -8,3 +8,4 @@ ham.addEventListener('click',()=> {
 closeX.addEventListener('click',()=> {
     navsection.classList.remove('nav-active');
 });
+
