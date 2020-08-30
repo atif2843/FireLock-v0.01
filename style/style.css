@@ -90,6 +90,9 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.logo{
+    height: 85px;
+}
 .ham-icon-container{
     align-content: center;
     padding: 28px 18px;
@@ -336,5 +339,5 @@ ul.contact-footer-links li a{
     box-shadow: 0 4px 5px -3px #2c2c2c;
   }
   .mobilenumwrapper{
-      
+
   }
