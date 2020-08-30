@@ -58,9 +58,15 @@
 		for (let i = 0; i < button.length; i++) {
                 button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 		}
-		for (let i = 0; i < button.length; i++) {
-			button[i].addEventListener("touchstart", () => i == 0 ? gotoPrev() : gotoNext());
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].addEventListener("touchstart", () => i == 0 ? gotoPrev() : gotoNext());
 	}
+	for (let i = 0; i < slides.length; i++) {
+		slides[i].addEventListener("touchmove", () => i == 0 ? gotoPrev() : gotoNext());
+}
+for (let i = 0; i < slides.length; i++) {
+	slides[i].addEventListener("touchend", () => i == 0 ? gotoPrev() : gotoNext());
+}
 		for (let i = 0; i < slides.length; i++) {
 			slides[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 	}
