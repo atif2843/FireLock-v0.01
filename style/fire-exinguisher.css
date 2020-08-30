@@ -43,6 +43,7 @@ div.main{
 div.side{
   padding: 3%;
   width: 100%;
+  align-self: center;
 }
 div.table{
   width:80%;
