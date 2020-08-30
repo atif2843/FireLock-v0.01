@@ -16,6 +16,7 @@ body {
 	line-height: 1.7;
 	box-sizing: border-box;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .top-contact{
     width: 100%;
@@ -223,8 +224,6 @@ footer{
     width: 100%;
     margin-top: 8%;
     background-image: linear-gradient(to right bottom, #f32d2d, #290078);
-    position: absolute;
-    top: 100%;
 }
 div.footer-warper{
     display: block;
@@ -311,3 +310,6 @@ ul.contact-footer-links li a{
     padding: 15px;
     border-radius: 4px;
   }
+.slider-container {
+    position: relative;
+}

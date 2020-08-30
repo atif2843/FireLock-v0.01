@@ -10,6 +10,9 @@ const slider = document.querySelector(".items");
 		for (let i = 0; i < button.length; i++) {
                 button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 		}
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+	}
 
 		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 

@@ -5,7 +5,7 @@ main.product-main{
 .items {
   position: relative;
   width: 100%;
-  height: 250vh;
+  height: 30vh;
   overflow: hidden;
 }
 
@@ -28,9 +28,6 @@ main.product-main{
 }
 .text{
   display: none;
-  position: absolute;
-  top: 13%;
-  /* left:50%; */
   transition: all 300ms ease-in-out;
   /* transform: translate(-50%,-71%); */
   font-weight: 500;
@@ -63,11 +60,12 @@ main.product-main{
 
 .items .button-container {
   position: absolute;
-  top: 6%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 227px;
   z-index: 97;
+  height: 0;
 }
 
 .button-container .button {
@@ -127,4 +125,10 @@ h1,h3{
 }
 .revisedtextpos{
   top: 65% !important;
+}
+.slider-text-wrapper{
+  position: relative;
+}
+.productnavbutton{
+  top: 37% !important;
 }
