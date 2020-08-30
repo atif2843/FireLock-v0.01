@@ -313,3 +313,25 @@ ul.contact-footer-links li a{
 .slider-container {
     position: relative;
 }
+.getqoutebtn{
+    text-align: center;
+    margin: 20px ;
+  }
+  .getqoute{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    background:  #fa2427;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px -3px #2c2c2c;
+    color: white;
+    text-align: center;
+  }
+  .getqoute:hover{
+    background: #fa2428ee;
+  }
+  .getqoute:active{
+    transform: translateY(1px);
+    box-shadow: 0 4px 5px -3px #2c2c2c;
+  }

@@ -7,51 +7,51 @@
 		let prev = 8;
 		let next = 1;
 		
-		function slide(slider, slides, prev, next,current) {
-			var posX1 = 0,
-				posX2 = 0,
-				posInitial,
-				posFinal,
-				threshold = 100
-				for (var i=0; i < slides.length; i++){
+		// function slide(slider, slides, prev, next,current) {
+		// 	var posX1 = 0,
+		// 		posX2 = 0,
+		// 		posInitial,
+		// 		posFinal,
+		// 		threshold = 100
+		// 		for (var i=0; i < slides.length; i++){
 		
-					slides[i].addEventListener("touchstart",function dragStart(e){
-						e = e || window.event;
-						e.preventDefault();
-						posInitial = slides.offsetLeft;
+		// 			slides[i].addEventListener("touchstart",function dragStart(e){
+		// 				e = e || window.event;
+		// 				e.preventDefault();
+		// 				posInitial = slides.offsetLeft;
 						
-						if (e.type == 'touchstart') {
-						  posX1 = e.touches[0].clientX;
-						} else {
-						  posX1 = e.clientX;
-						  document.onmouseup = dragEnd;
-						  document.onmousemove = dragAction;
-					}});
+		// 				if (e.type == 'touchstart') {
+		// 				  posX1 = e.touches[0].clientX;
+		// 				} else {
+		// 				  posX1 = e.clientX;
+		// 				  document.onmouseup = dragEnd;
+		// 				  document.onmousemove = dragAction;
+		// 			}});
 					
 					
 					
-					slides[i].addEventListener("touchend", function dragEnd (e) {
-						posFinal = slides.offsetLeft;
-						if (posFinal - posInitial < -threshold) {
-						  shiftSlide(1, 'drag');
-						} else if (posFinal - posInitial > threshold) {
-						  shiftSlide(-1, 'drag');
-						} else {
-						  slides.style.left = (posInitial) + "px";
-						}});
+		// 			slides[i].addEventListener("touchend", function dragEnd (e) {
+		// 				posFinal = slides.offsetLeft;
+		// 				if (posFinal - posInitial < -threshold) {
+		// 				  shiftSlide(1, 'drag');
+		// 				} else if (posFinal - posInitial > threshold) {
+		// 				  shiftSlide(-1, 'drag');
+		// 				} else {
+		// 				  slides.style.left = (posInitial) + "px";
+		// 				}});
 					
-						slides[i].addEventListener("touchmove", function dragAction (e) {
-							e = e || window.event;
-							if (e.type == 'touchmove') {
-							  posX2 = posX1 - e.touches[0].clientX;
-							  posX1 = e.touches[0].clientX;
-							} else {
-							  posX2 = posX1 - e.clientX;
-							  posX1 = e.clientX;
-							}
-						  });
-						}
-			};
+		// 				slides[i].addEventListener("touchmove", function dragAction (e) {
+		// 					e = e || window.event;
+		// 					if (e.type == 'touchmove') {
+		// 					  posX2 = posX1 - e.touches[0].clientX;
+		// 					  posX1 = e.touches[0].clientX;
+		// 					} else {
+		// 					  posX2 = posX1 - e.clientX;
+		// 					  posX1 = e.clientX;
+		// 					}
+		// 				  });
+		// 				};
+		// 	};
 		
 		
 
@@ -59,16 +59,7 @@
                 button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 		}
 		for (let i = 0; i < slides.length; i++) {
-			slides[i].addEventListener("touchstart", () => i == 0 ? gotoPrev() : gotoNext());
-	}
-	for (let i = 0; i < slides.length; i++) {
-		slides[i].addEventListener("touchmove", () => i == 0 ? gotoPrev() : gotoNext());
-}
-for (let i = 0; i < slides.length; i++) {
-	slides[i].addEventListener("touchend", () => i == 0 ? gotoPrev() : gotoNext());
-}
-		for (let i = 0; i < slides.length; i++) {
-			slides[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+			slides[i].addEventListener("click", () => i == 0 ? gotoNext() : gotoPrev());
 	}
 
 		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
@@ -108,22 +99,4 @@ for (let i = 0; i < slides.length; i++) {
 
 
 
-		//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+		
